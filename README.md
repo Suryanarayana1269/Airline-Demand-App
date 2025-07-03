@@ -62,8 +62,8 @@ pip install fastapi uvicorn requests pandas streamlit plotly pydeck
 ### 3. Run the backend
 
 ```sh
-cd backend
-uvicorn main:app --reload
+Airline-Demand-App\
+uvicorn backend main:app --reload
 ```
 - Backend runs at [http://localhost:8000](http://localhost:8000)
 
