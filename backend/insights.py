@@ -26,6 +26,7 @@ def generate_insights(df):
         .to_dict(orient="records")
     )
 
+    # Route as "Origin Country → [lat, lon]"
     df["route"] = df["origin_country"] + " → [" + df["latitude"].astype(str) + ", " + df["longitude"].astype(str) + "]"
     top_routes = (
         df["route"]
